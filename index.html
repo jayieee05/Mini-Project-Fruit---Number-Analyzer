@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit & Number Analyzer</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div class="animated-gradient"></div>
+    <div class="container">
+        <header class="app-header">
+            <h1>Fruit & Number Analyzer</h1>
+        </header>
+        
+        <div class="main-content">
+            <section class="input-section">
+                <h2><span class="icon">📝</span>Enter Your Information</h2>
+                <div class="input-group">
+                    <div class="input-block personal-info">
+                        <label for="userName">Name</label>
+                        <input type="text" id="userName" placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="input-block number-input">
+                        <label for="userNumber">Number</label>
+                        <input type="number" id="userNumber" placeholder="Enter a number">
+                    </div>
+                    
+                    <div class="input-block sentence-input">
+                        <label for="userSentence">Sentence</label>
+                        <input type="text" id="userSentence" placeholder="Enter a short sentence">
+                    </div>
+                    
+                    <div class="input-block fruits-section">
+                        <label>Your Favorite Fruits</label>
+                        <div class="fruit-inputs">
+                            <input type="text" id="fruit1" placeholder="Enter your first favorite fruit">
+                            <input type="text" id="fruit2" placeholder="Enter your second favorite fruit">
+                            <input type="text" id="fruit3" placeholder="Enter your third favorite fruit">
+                        </div>
+                    </div>
+                    
+                    <button onclick="runAnalysis()" class="main-button">
+                        <span class="button-icon">✨</span>
+                        <span class="button-text">Analyze Everything!</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="results">
+                <h2><span class="icon">📊</span>Results</h2>
+                <div class="results-grid">
+                    <div id="userResults" class="result-card">
+                        <h3>User Info</h3>
+                        <div id="greetingResult"></div>
+                    </div>
+                    <div id="mathResults" class="result-card">
+                        <h3>Math Operations</h3>
+                        <div class="math-content">
+                            <div id="numberSequence"></div>
+                            <div id="calculations"></div>
+                        </div>
+                    </div>
+                    <div id="sentenceResults" class="result-card">
+                        <h3>Sentence Analysis</h3>
+                        <div id="sentenceResult"></div>
+                    </div>
+                    <div id="fruitResults" class="result-card">
+                        <h3>Fruit Selection</h3>
+                        <div id="fruitList"></div>
+                    </div>
+                    <div id="timerResults" class="result-card">
+                        <h3>Timer</h3>
+                        <div id="countdown"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
